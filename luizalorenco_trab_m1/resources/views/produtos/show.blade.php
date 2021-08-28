@@ -1,6 +1,6 @@
 @extends('produtos.layout')
 
-@section('title',__($produto->tipo . ': CRUD Laravel'))
+@section('title',__($produto->tipo . ': Produtos'))
 
 @push('css')
 <style>
@@ -23,7 +23,7 @@ table th{
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
-                        <span><span class="text-info">{{$produto->tipo}}</span>: (@lang('CRUD Laravel'))</span>
+                        <span><span class="text-info">{{$produto->tipo}}</span>: (@lang('Produtos'))</span>
                         <a href="{{ url('produtos') }}" class="btn-info btn-sm">
                             <i class="fa fa-arrow-left"></i> @lang('Voltar')
                         </a>
