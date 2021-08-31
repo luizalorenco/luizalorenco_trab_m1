@@ -1,6 +1,6 @@
 @extends('produtos.layout')
 
-@section('title',__('Editar (CRUD Laravel)'))
+@section('title',__('Editar (Produtos)'))
 
 @push('css')
 <style>
@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
-                        <span>@lang('Editar (CRUD Laravel)')</span>
+                        <span>@lang('Editar (Produtos)')</span>
                         <a href="{{ url('produtos') }}" class="btn-info btn-sm">
                             <i class="fa fa-arrow-left"></i> @lang('Voltar')
                         </a>
