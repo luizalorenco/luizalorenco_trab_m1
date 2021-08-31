@@ -118,11 +118,11 @@ class ProdutoController extends Controller
     public function destroy($id)
     {
         //
-        $paciente = Paciente::findOrFail($id);
+        $produto = Produto::findOrFail($id);
         // realizando a exclusão
-        $paciente->delete();
+        $produto->delete();
         // redirecionando para o diretório raiz (index)
-        return redirect('/pacientes')->with('success', 
+        return redirect('/produtos')->with('success', 
         'Dados removidos com sucesso!');
     }
 }
